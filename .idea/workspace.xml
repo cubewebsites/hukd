@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68d55662-46b3-4f09-bf72-e3195a62aa27" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="68d55662-46b3-4f09-bf72-e3195a62aa27" name="Default" comment="" />
     <ignored path="hukd.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,19 +58,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="10" selection-start="62" selection-end="62" vertical-scroll-proportion="0.13725491">
+            <state line="7" column="10" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="43" selection-start="2083" selection-end="2100" vertical-scroll-proportion="0.0">
+            <state line="87" column="165" selection-start="2635" selection-end="2635" vertical-scroll-proportion="0.88044834">
               <folding />
             </state>
           </provider>
@@ -122,11 +119,11 @@
         <option value="$PROJECT_DIR$/lib/hukd.rb" />
         <option value="$PROJECT_DIR$/lib/hukd/deal.rb" />
         <option value="$PROJECT_DIR$/lib/hukd/base.rb" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/hukd.gemspec" />
         <option value="$PROJECT_DIR$/spec/hukd_spec.rb" />
         <option value="$PROJECT_DIR$/lib/hukd/version.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -490,13 +487,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="43" selection-start="2083" selection-end="2100" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/hukd/version.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="18" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
@@ -520,7 +510,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="10" selection-start="62" selection-end="62" vertical-scroll-proportion="0.13725491">
+        <state line="7" column="10" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="165" selection-start="2635" selection-end="2635" vertical-scroll-proportion="0.88044834">
           <folding />
         </state>
       </provider>
