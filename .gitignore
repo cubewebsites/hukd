@@ -3,6 +3,6 @@
 Gemfile.lock
 pkg/*
 
-.idea/
-nbproject/
+.idea/*
+nbproject/*
 .project/*
