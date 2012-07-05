@@ -86,4 +86,5 @@ Thanks
 ------
 
 To the [great guide](https://github.com/radar/guides/blob/master/gem-development.md) by [Hrvoje Šimić](https://github.com/shime) to help me develop my first gem :)
+
 To the [badfruit](https://github.com/brianmichel/BadFruit) gem by [brianmichel](https://github.com/brianmichel) which I referenced and to develop my own gem

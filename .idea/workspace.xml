@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68d55662-46b3-4f09-bf72-e3195a62aa27" name="Default" comment="" />
+    <list default="true" id="68d55662-46b3-4f09-bf72-e3195a62aa27" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
     <ignored path="hukd.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,7 +72,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="165" selection-start="2635" selection-end="2635" vertical-scroll-proportion="0.88044834">
+            <state line="89" column="0" selection-start="2637" selection-end="2637" vertical-scroll-proportion="0.9202989">
               <folding />
             </state>
           </provider>
@@ -517,7 +519,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="165" selection-start="2635" selection-end="2635" vertical-scroll-proportion="0.88044834">
+        <state line="89" column="0" selection-start="2637" selection-end="2637" vertical-scroll-proportion="0.9202989">
           <folding />
         </state>
       </provider>
