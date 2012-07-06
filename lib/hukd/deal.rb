@@ -2,10 +2,12 @@ module Hukd
 	class Deal
 
 		attr_accessor  :title, :deal_link, :mobile_deal_link, :deal_image, :description, :submit_time, :hot_time, :poster_name,
-		               :temperature, :price, :timestamp, :expired,
+		               :temperature, :temperature_rounded, :price, :timestamp, :expired,
 		               :forum_name, :forum_url_name, :category_name, :category_url_name, :merchant_name, :merchant_url_name,
 		               :tags, :deal_image_highres
 
+	# @param [Hash] dealhash
+	# @param [Hukd] hukd
 		def initialize(dealhash,hukd)
 			@title         = dealhash["title"]
 			@deal_link     = dealhash["deal_link"]
@@ -16,6 +18,7 @@ module Hukd
 			@hot_time       =  dealhash["hot_time"]
 			@poster_name    =  dealhash["poster_name"]
 			@temperature    = dealhash["temperature"]
+			@temperature_rounded  = temperature.to_int
 			@price          = dealhash["price"]
 			@timestamp      = dealhash["timestamp"]
 			@expired        = dealhash["expired"]
@@ -38,6 +41,8 @@ module Hukd
 			end
 			tags
 		end
+
+
 
 	end
 end
