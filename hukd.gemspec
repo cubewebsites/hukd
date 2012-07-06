@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Hukd::VERSION
   s.authors     = ["Cube Websites"]
   s.email       = ["messages@cubewebsites.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/cubewebsites/hukd"
   s.summary     = "API Wrapper for HotUKDeals (HUKD)"
   s.description = "API Wrapper for HotUKDeals (HUKD)"
 
