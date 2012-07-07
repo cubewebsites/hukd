@@ -100,18 +100,16 @@ module Hukd
 			end
 
 			# Make a request
-			resp  = HTTParty.get("#{API_BASE_URL}", :query => options)
+			resp  = HTTParty.get("#{API_BASE_URL}", { :query => options, :headers =>{ 'ContentType' => 'application/json charset=utf-8' } })
 
 			# Got a success response
 			if resp.code == 200
-				deals = MultiJson.load(resp.body)
 				# Ensure a valid response is returned
-				if (deals['error'])
-					raise Exception, deals['error']
+				if (resp['error'])
+					raise Exception, resp['error']
 				end
-
-				# Returned parsed deals
-				return parse_deals(deals)
+        # Returned parsed deals
+				return parse_deals(resp)
 			end
 
 		end
@@ -119,6 +117,7 @@ module Hukd
 		def parse_deals(hash)
 			dealsArray = Array.new
 			hash["deals"]["items"].each do |deal|
+				deal.map  { |k, v| deal[k] = v.is_a?(String) ? v.encode("iso-8859-1") : v }
 				dealsArray.push(Deal.new(deal, self))
 			end
 			dealsArray
