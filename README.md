@@ -52,6 +52,7 @@ Each deal object has the following attributes available:
     hot_time
     poster_name
     temperature
+    temperature_rounded
     price
     timestamp
     expired
