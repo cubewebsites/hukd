@@ -81,7 +81,7 @@ module Hukd
 		def get(forum='', category='', limit=20, options={})
 
 			# Reset total results
-			total_results  = 0
+			@total_results  = 0
 
 			# Set the API_KEY
 			options['key'] = @api_key
@@ -113,7 +113,7 @@ module Hukd
 					raise Exception, resp['error']
 				end
         # Returned parsed deals
-				total_results = resp['total_results']
+				@total_results = resp['total_results']
 				return parse_deals(resp)
 			end
 
