@@ -4,7 +4,7 @@ require "hukd"
 describe Hukd::Deal do
 
 	before(:all) do
-		@deal = Hukd.new("API_KEY_HERE").hottest('deals','',1)[:deals][0]
+		@deal = Hukd.new("API_KEY_HERE").hottest('deals','',1)[0]
 	end
 
 	it "should have a rounded temperature" do

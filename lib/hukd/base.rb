@@ -1,6 +1,6 @@
 module Hukd
 	class Base
-		attr_accessor :api_key
+		attr_accessor :api_key, :total_results
 		API_VERSION = "2.0"
 		API_BASE_URL = "http://api.hotukdeals.com/rest_api/v2/"
 
@@ -79,6 +79,10 @@ module Hukd
 		end
 
 		def get(forum='', category='', limit=20, options={})
+
+			# Reset total results
+			total_results  = 0
+
 			# Set the API_KEY
 			options['key'] = @api_key
 			options['output'] = 'json'
@@ -109,7 +113,8 @@ module Hukd
 					raise Exception, resp['error']
 				end
         # Returned parsed deals
-				return {:deals => parse_deals(resp), :total_results => resp['total_results'] }
+				total_results = resp['total_results']
+				return parse_deals(resp)
 			end
 
 		end

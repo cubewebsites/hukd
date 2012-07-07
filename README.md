@@ -22,12 +22,15 @@ You can start of by creating an instance of the client, which just needs an Api 
     require 'hukd'
     hukd	=	Hukd.new("YOUR_API_KEY_HERE")
 
-You can then make an API request to receive a hash containing the following keys:
+You can then make an API request to receive an Array of Deal objects
 
 	deals	=	hukd.hottest('deals')
 
-	:deals					-	An array containing Deal objects
-	:total_results			-	The total number of results that can be retrieved using the current filter options
+Once you've made a successful request, the total_results attribute will become available
+
+	hukd.total_results
+
+This gives you the total number of results that can be retrieved using the current filter options
 
 The following API calls are available
 
@@ -73,13 +76,11 @@ Combining everything together will give you something like this:
     require 'hukd'
     hukd	=	Hukd.new("YOUR_API_KEY_HERE")
     deals	=	hukd.hottest('deals')
-    deals[:deals].each |deal| do
+    deals.each |deal| do
     	puts(deal.title)
     end
-    puts(deals[:total_results])
 
 This will fetch the hottest deals (default at 20) and print the title to the console.
-The total number of available results will be printed underneath
 
 Support
 --------
