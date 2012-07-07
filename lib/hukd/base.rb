@@ -109,7 +109,7 @@ module Hukd
 					raise Exception, resp['error']
 				end
         # Returned parsed deals
-				return parse_deals(resp)
+				return {:deals => parse_deals(resp), :total_results => resp['total_results'] }
 			end
 
 		end
